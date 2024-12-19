@@ -31,8 +31,8 @@ public class dartar extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        daftar = new javax.swing.JButton();
+        kembali = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
         jTextArea1 = new javax.swing.JTextArea();
@@ -51,9 +51,9 @@ public class dartar extends javax.swing.JFrame {
 
         jLabel4.setText("Alamat");
 
-        jButton1.setText("Daftar");
+        daftar.setText("Daftar");
 
-        jButton2.setText("Kembali");
+        kembali.setText("Kembali");
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -74,7 +74,7 @@ public class dartar extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton2)
+                            .addComponent(kembali)
                             .addComponent(jLabel4))
                         .addGap(32, 32, 32)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -84,7 +84,7 @@ public class dartar extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jTextArea1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel1)
-                            .addComponent(jButton1))
+                            .addComponent(daftar))
                         .addGap(0, 78, Short.MAX_VALUE))
                     .addComponent(jTextField1))
                 .addGap(74, 74, 74))
@@ -95,7 +95,7 @@ public class dartar extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1)
-                    .addComponent(jButton2))
+                    .addComponent(kembali))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2)
@@ -113,7 +113,7 @@ public class dartar extends javax.swing.JFrame {
                     .addComponent(jLabel4)
                     .addComponent(jTextArea1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
+                .addComponent(daftar)
                 .addContainerGap(38, Short.MAX_VALUE))
         );
 
@@ -168,8 +168,7 @@ public class dartar extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton daftar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -180,5 +179,6 @@ public class dartar extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
+    private javax.swing.JButton kembali;
     // End of variables declaration//GEN-END:variables
 }
