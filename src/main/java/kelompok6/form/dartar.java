@@ -6,7 +6,7 @@ package kelompok6.form;
 
 /**
  *
- * @author LOQ
+ * @author LOQA
  */
 public class dartar extends javax.swing.JFrame {
 
