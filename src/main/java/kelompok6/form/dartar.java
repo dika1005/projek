@@ -33,8 +33,8 @@ public class dartar extends javax.swing.JFrame {
         password = new javax.swing.JLabel();
         email = new javax.swing.JLabel();
         alamat = new javax.swing.JLabel();
-        daftar = new javax.swing.JButton();
-        kembali = new javax.swing.JButton();
+        Daftar = new javax.swing.JButton();
+        Kembali = new javax.swing.JButton();
         formnama = new javax.swing.JTextField();
         formusername = new javax.swing.JTextField();
         formpassword = new javax.swing.JTextField();
@@ -57,9 +57,9 @@ public class dartar extends javax.swing.JFrame {
 
         alamat.setText("Alamat");
 
-        daftar.setText("Daftar");
+        Daftar.setText("Daftar");
 
-        kembali.setText("Kembali");
+        Kembali.setText("Kembali");
 
         formalamat.setColumns(20);
         formalamat.setRows(5);
@@ -72,7 +72,7 @@ public class dartar extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(nama, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(kembali)
+                    .addComponent(Kembali)
                     .addComponent(password)
                     .addComponent(username)
                     .addComponent(email, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -85,12 +85,12 @@ public class dartar extends javax.swing.JFrame {
                     .addComponent(formpassword)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(daftar)
+                            .addComponent(Daftar)
                             .addComponent(title))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addComponent(formnama)
                     .addComponent(formemail)
-                    .addComponent(formalamat, javax.swing.GroupLayout.DEFAULT_SIZE, 611, Short.MAX_VALUE))
+                    .addComponent(formalamat, javax.swing.GroupLayout.DEFAULT_SIZE, 607, Short.MAX_VALUE))
                 .addGap(74, 74, 74))
         );
         jPanel1Layout.setVerticalGroup(
@@ -99,7 +99,7 @@ public class dartar extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(title)
-                    .addComponent(kembali))
+                    .addComponent(Kembali))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(nama)
@@ -124,8 +124,8 @@ public class dartar extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(formalamat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
-                .addComponent(daftar)
-                .addContainerGap(301, Short.MAX_VALUE))
+                .addComponent(Daftar)
+                .addContainerGap(75, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -138,7 +138,7 @@ public class dartar extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 600, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -181,8 +181,9 @@ public class dartar extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Daftar;
+    private javax.swing.JButton Kembali;
     private javax.swing.JLabel alamat;
-    private javax.swing.JButton daftar;
     private javax.swing.JLabel email;
     private javax.swing.JTextArea formalamat;
     private javax.swing.JTextField formemail;
@@ -190,7 +191,6 @@ public class dartar extends javax.swing.JFrame {
     private javax.swing.JTextField formpassword;
     private javax.swing.JTextField formusername;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JButton kembali;
     private javax.swing.JLabel nama;
     private javax.swing.JLabel password;
     private javax.swing.JLabel title;

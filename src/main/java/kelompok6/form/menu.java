@@ -36,10 +36,10 @@ public class menu extends javax.swing.JFrame {
 
         Content = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
-        jMenu3 = new javax.swing.JMenu();
-        jMenu4 = new javax.swing.JMenu();
+        Home = new javax.swing.JMenu();
+        menuUtama = new javax.swing.JMenu();
+        Pemesanan = new javax.swing.JMenu();
+        Tagihan = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -56,22 +56,22 @@ public class menu extends javax.swing.JFrame {
             .addGap(0, 600, Short.MAX_VALUE)
         );
 
-        jMenu1.setText("Home");
-        jMenu1.addMouseListener(new java.awt.event.MouseAdapter() {
+        Home.setText("Home");
+        Home.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jMenu1MouseClicked(evt);
+                HomeMouseClicked(evt);
             }
         });
-        jMenuBar1.add(jMenu1);
+        jMenuBar1.add(Home);
 
-        jMenu2.setText("Menu Utama");
-        jMenuBar1.add(jMenu2);
+        menuUtama.setText("Menu Utama");
+        jMenuBar1.add(menuUtama);
 
-        jMenu3.setText("Pemesanan");
-        jMenuBar1.add(jMenu3);
+        Pemesanan.setText("Pemesanan");
+        jMenuBar1.add(Pemesanan);
 
-        jMenu4.setText("Tagihan");
-        jMenuBar1.add(jMenu4);
+        Tagihan.setText("Tagihan");
+        jMenuBar1.add(Tagihan);
 
         setJMenuBar(jMenuBar1);
 
@@ -91,14 +91,14 @@ public class menu extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenu1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu1MouseClicked
+    private void HomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HomeMouseClicked
         // TODO add your handling code here:
         Content.removeAll();
         Login login = new Login();
         Content.add(login.getContentPane(), java.awt.BorderLayout.CENTER);
         Content.revalidate();
         Content.repaint();
-    }//GEN-LAST:event_jMenu1MouseClicked
+    }//GEN-LAST:event_HomeMouseClicked
 
     /**
      * @param args the command line arguments
@@ -137,10 +137,10 @@ public class menu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Content;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenu Home;
+    private javax.swing.JMenu Pemesanan;
+    private javax.swing.JMenu Tagihan;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenu menuUtama;
     // End of variables declaration//GEN-END:variables
 }
