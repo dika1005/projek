@@ -4,6 +4,8 @@
  */
 package kelompok6.form;
 
+import kelompok6.repo.AdminRepository;
+
 /**
  *
  * @author bayuik
@@ -17,6 +19,26 @@ public class Login extends javax.swing.JFrame {
         initComponents();
     }
 
+    public void login_admin(){
+        
+        AdminRepository adminRepository = new AdminRepository();
+        String username = formUsername.getText();
+        String password = formPassword.getText();
+        if (adminRepository.login(username, password) != null) {
+            System.out.println("Login Berhasil");
+        } else {
+           System .out.println("Login Gagal");
+        }
+    }
+    public void logina(){
+
+        String knt = level.getSelectedItem().toString();
+        if (knt.equals("Admin")) {
+            login_admin();
+        } else if (knt.equals("User")) {
+            System.err.println("Login User");
+        }
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -118,7 +140,7 @@ public class Login extends javax.swing.JFrame {
 
     private void loginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginMouseClicked
         // TODO add your handling code here:
-        
+        logina();
     }//GEN-LAST:event_loginMouseClicked
 
     /**

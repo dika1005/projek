@@ -7,7 +7,7 @@ import kelompok6.lib.koneksii;
 import kelompok6.model.AdminModel;
 
 public class AdminRepository {
-    private static final String TABLE_NAME = "Admin";
+    private static final String TABLE_NAME = "admin";
 
     public boolean create(AdminModel admin) {
         String query = "INSERT INTO " + TABLE_NAME + " (username, password) VALUES (?, ?)";
