@@ -34,7 +34,7 @@ public class Login extends javax.swing.JFrame {
         formUsername = new javax.swing.JTextField();
         formPassword = new javax.swing.JTextField();
         level = new javax.swing.JComboBox<>();
-        simpan = new javax.swing.JButton();
+        login = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -48,10 +48,10 @@ public class Login extends javax.swing.JFrame {
 
         level.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pilih", "Admin", "User" }));
 
-        simpan.setText("SIMPAN");
-        simpan.addMouseListener(new java.awt.event.MouseAdapter() {
+        login.setText("LOGIN");
+        login.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                simpanMouseClicked(evt);
+                loginMouseClicked(evt);
             }
         });
 
@@ -77,7 +77,7 @@ public class Login extends javax.swing.JFrame {
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(formUsername, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(level, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(simpan))))))
+                                    .addComponent(login))))))
                 .addGap(0, 387, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -98,7 +98,7 @@ public class Login extends javax.swing.JFrame {
                     .addComponent(sebagai)
                     .addComponent(level, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(simpan)
+                .addComponent(login)
                 .addContainerGap(365, Short.MAX_VALUE))
         );
 
@@ -116,10 +116,10 @@ public class Login extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void simpanMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_simpanMouseClicked
+    private void loginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginMouseClicked
         // TODO add your handling code here:
         
-    }//GEN-LAST:event_simpanMouseClicked
+    }//GEN-LAST:event_loginMouseClicked
 
     /**
      * @param args the command line arguments
@@ -162,9 +162,9 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JTextField formUsername;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JComboBox<String> level;
+    private javax.swing.JButton login;
     private javax.swing.JLabel password;
     private javax.swing.JLabel sebagai;
-    private javax.swing.JButton simpan;
     private javax.swing.JLabel tittle;
     private javax.swing.JLabel username;
     // End of variables declaration//GEN-END:variables
