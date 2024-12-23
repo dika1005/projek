@@ -75,6 +75,11 @@ public class menu extends javax.swing.JFrame {
         jMenuBar1.add(menuUtama);
 
         Login.setText("Login");
+        Login.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                LoginMouseClicked(evt);
+            }
+        });
         jMenuBar1.add(Login);
 
         Daftar.setText("Daftar");
@@ -115,8 +120,8 @@ public class menu extends javax.swing.JFrame {
     private void HomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HomeMouseClicked
         // TODO add your handling code here:
         Content.removeAll();
-        Login login = new Login();
-        Content.add(login.getContentPane(), java.awt.BorderLayout.CENTER);
+        Loading loading = new Loading();
+        Content.add(loading.getContentPane(), java.awt.BorderLayout.CENTER);
         Content.revalidate();
         Content.repaint();
     }//GEN-LAST:event_HomeMouseClicked
@@ -147,6 +152,15 @@ public class menu extends javax.swing.JFrame {
         Content.revalidate();
         Content.repaint();
     }//GEN-LAST:event_TagihanMouseClicked
+
+    private void LoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LoginMouseClicked
+        // TODO add your handling code here:
+        Content.removeAll();
+        Login login = new Login();
+        Content.add(login.getContentPane(), java.awt.BorderLayout.CENTER);
+        Content.revalidate();
+        Content.repaint();
+    }//GEN-LAST:event_LoginMouseClicked
 
     /**
      * @param args the command line arguments
