@@ -35,10 +35,6 @@ public class menu extends javax.swing.JFrame {
     private void initComponents() {
 
         Content = new javax.swing.JPanel();
-        tittle = new javax.swing.JLabel();
-        namaanggota = new javax.swing.JLabel();
-        bayuimantoro = new javax.swing.JLabel();
-        muhamadhafizhalbar = new javax.swing.JLabel();
         menubar = new javax.swing.JMenuBar();
         home = new javax.swing.JMenu();
         about = new javax.swing.JMenu();
@@ -49,48 +45,15 @@ public class menu extends javax.swing.JFrame {
 
         Content.setPreferredSize(new java.awt.Dimension(800, 600));
 
-        tittle.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        tittle.setText("Kelompok 6");
-
-        namaanggota.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        namaanggota.setText("Nama Anggota:");
-
-        bayuimantoro.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        bayuimantoro.setText("Bayu Imantoro");
-
-        muhamadhafizhalbar.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        muhamadhafizhalbar.setText("Muhamad Hafizh Albar");
-
         javax.swing.GroupLayout ContentLayout = new javax.swing.GroupLayout(Content);
         Content.setLayout(ContentLayout);
         ContentLayout.setHorizontalGroup(
             ContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ContentLayout.createSequentialGroup()
-                .addContainerGap(213, Short.MAX_VALUE)
-                .addGroup(ContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(ContentLayout.createSequentialGroup()
-                        .addComponent(bayuimantoro, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(114, 114, 114)
-                        .addComponent(muhamadhafizhalbar))
-                    .addGroup(ContentLayout.createSequentialGroup()
-                        .addGap(120, 120, 120)
-                        .addGroup(ContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(namaanggota)
-                            .addComponent(tittle))))
-                .addGap(167, 167, 167))
+            .addGap(0, 806, Short.MAX_VALUE)
         );
         ContentLayout.setVerticalGroup(
             ContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ContentLayout.createSequentialGroup()
-                .addGap(175, 175, 175)
-                .addComponent(tittle)
-                .addGap(37, 37, 37)
-                .addComponent(namaanggota)
-                .addGap(18, 18, 18)
-                .addGroup(ContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(bayuimantoro)
-                    .addComponent(muhamadhafizhalbar))
-                .addContainerGap(289, Short.MAX_VALUE))
+            .addGap(0, 601, Short.MAX_VALUE)
         );
 
         home.setText("Home");
@@ -201,13 +164,9 @@ public class menu extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Content;
     private javax.swing.JMenu about;
-    private javax.swing.JLabel bayuimantoro;
     private javax.swing.JMenu daftar;
     private javax.swing.JMenu home;
     private javax.swing.JMenu login;
     private javax.swing.JMenuBar menubar;
-    private javax.swing.JLabel muhamadhafizhalbar;
-    private javax.swing.JLabel namaanggota;
-    private javax.swing.JLabel tittle;
     // End of variables declaration//GEN-END:variables
 }
