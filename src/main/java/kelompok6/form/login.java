@@ -6,7 +6,7 @@ package kelompok6.form;
 
 /**
  *
- * @author bayui
+ * @author bayuik
  */
 public class Login extends javax.swing.JFrame {
 
