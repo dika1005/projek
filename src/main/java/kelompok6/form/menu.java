@@ -81,6 +81,11 @@ public class menu extends javax.swing.JFrame {
         jMenuBar1.add(Pemesanan);
 
         Tagihan.setText("Tagihan");
+        Tagihan.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                TagihanMouseClicked(evt);
+            }
+        });
         jMenuBar1.add(Tagihan);
 
         setJMenuBar(jMenuBar1);
@@ -125,6 +130,15 @@ public class menu extends javax.swing.JFrame {
         Content.revalidate();
         Content.repaint();
     }//GEN-LAST:event_PemesananMouseClicked
+
+    private void TagihanMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TagihanMouseClicked
+        // TODO add your handling code here:
+        Content.removeAll();
+        Tagihan tagihan = new Tagihan();
+        Content.add(tagihan.getContentPane(), java.awt.BorderLayout.CENTER);
+        Content.revalidate();
+        Content.repaint();
+    }//GEN-LAST:event_TagihanMouseClicked
 
     /**
      * @param args the command line arguments
