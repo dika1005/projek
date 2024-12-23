@@ -35,76 +35,90 @@ public class menu extends javax.swing.JFrame {
     private void initComponents() {
 
         Content = new javax.swing.JPanel();
+        tittle = new javax.swing.JLabel();
+        namaanggota = new javax.swing.JLabel();
+        bayuimantoro = new javax.swing.JLabel();
+        muhamadhafizhalbar = new javax.swing.JLabel();
         menubar = new javax.swing.JMenuBar();
-        Home = new javax.swing.JMenu();
-        Login = new javax.swing.JMenu();
-        Daftar = new javax.swing.JMenu();
-        menuUtama = new javax.swing.JMenu();
-        Pemesanan = new javax.swing.JMenu();
-        Tagihan = new javax.swing.JMenu();
+        home = new javax.swing.JMenu();
+        about = new javax.swing.JMenu();
+        login = new javax.swing.JMenu();
+        daftar = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         Content.setPreferredSize(new java.awt.Dimension(800, 600));
 
+        tittle.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        tittle.setText("Kelompok 6");
+
+        namaanggota.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        namaanggota.setText("Nama Anggota:");
+
+        bayuimantoro.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        bayuimantoro.setText("Bayu Imantoro");
+
+        muhamadhafizhalbar.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        muhamadhafizhalbar.setText("Muhamad Hafizh Albar");
+
         javax.swing.GroupLayout ContentLayout = new javax.swing.GroupLayout(Content);
         Content.setLayout(ContentLayout);
         ContentLayout.setHorizontalGroup(
             ContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 806, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ContentLayout.createSequentialGroup()
+                .addContainerGap(213, Short.MAX_VALUE)
+                .addGroup(ContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ContentLayout.createSequentialGroup()
+                        .addComponent(bayuimantoro, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(114, 114, 114)
+                        .addComponent(muhamadhafizhalbar))
+                    .addGroup(ContentLayout.createSequentialGroup()
+                        .addGap(120, 120, 120)
+                        .addGroup(ContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(namaanggota)
+                            .addComponent(tittle))))
+                .addGap(167, 167, 167))
         );
         ContentLayout.setVerticalGroup(
             ContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 600, Short.MAX_VALUE)
+            .addGroup(ContentLayout.createSequentialGroup()
+                .addGap(175, 175, 175)
+                .addComponent(tittle)
+                .addGap(37, 37, 37)
+                .addComponent(namaanggota)
+                .addGap(18, 18, 18)
+                .addGroup(ContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(bayuimantoro)
+                    .addComponent(muhamadhafizhalbar))
+                .addContainerGap(289, Short.MAX_VALUE))
         );
 
-        Home.setText("Home");
-        Home.addMouseListener(new java.awt.event.MouseAdapter() {
+        home.setText("Home");
+        home.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                HomeMouseClicked(evt);
+                homeMouseClicked(evt);
             }
         });
-        menubar.add(Home);
+        menubar.add(home);
 
-        Login.setText("Login");
-        Login.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                LoginMouseClicked(evt);
-            }
-        });
-        menubar.add(Login);
+        about.setText("About");
+        menubar.add(about);
 
-        Daftar.setText("Daftar");
-        Daftar.addMouseListener(new java.awt.event.MouseAdapter() {
+        login.setText("Login");
+        login.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                DaftarMouseClicked(evt);
+                loginMouseClicked(evt);
             }
         });
-        menubar.add(Daftar);
+        menubar.add(login);
 
-        menuUtama.setText("Menu Utama");
-        menuUtama.addMouseListener(new java.awt.event.MouseAdapter() {
+        daftar.setText("Daftar");
+        daftar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                menuUtamaMouseClicked(evt);
+                daftarMouseClicked(evt);
             }
         });
-        menubar.add(menuUtama);
-
-        Pemesanan.setText("Pemesanan");
-        Pemesanan.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PemesananMouseClicked(evt);
-            }
-        });
-        menubar.add(Pemesanan);
-
-        Tagihan.setText("Tagihan");
-        Tagihan.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                TagihanMouseClicked(evt);
-            }
-        });
-        menubar.add(Tagihan);
+        menubar.add(daftar);
 
         setJMenuBar(menubar);
 
@@ -116,65 +130,38 @@ public class menu extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Content, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(Content, javax.swing.GroupLayout.DEFAULT_SIZE, 601, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void HomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HomeMouseClicked
+    private void homeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_homeMouseClicked
         // TODO add your handling code here:
         Content.removeAll();
         Loading loading = new Loading();
         Content.add(loading.getContentPane(), java.awt.BorderLayout.CENTER);
         Content.revalidate();
         Content.repaint();
-    }//GEN-LAST:event_HomeMouseClicked
+    }//GEN-LAST:event_homeMouseClicked
 
-    private void menuUtamaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuUtamaMouseClicked
-        // TODO add your handling code here:
-        Content.removeAll();
-        halaman_utama halamanUtama = new halaman_utama();
-        Content.add(halamanUtama.getContentPane(), java.awt.BorderLayout.CENTER);
-        Content.revalidate();
-        Content.repaint();
-    }//GEN-LAST:event_menuUtamaMouseClicked
-
-    private void PemesananMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PemesananMouseClicked
-        // TODO add your handling code here:
-        Content.removeAll();
-        paket_data pemesanan = new paket_data();
-        Content.add(pemesanan.getContentPane(), java.awt.BorderLayout.CENTER);
-        Content.revalidate();
-        Content.repaint();
-    }//GEN-LAST:event_PemesananMouseClicked
-
-    private void TagihanMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TagihanMouseClicked
-        // TODO add your handling code here:
-        Content.removeAll();
-        Tagihan tagihan = new Tagihan();
-        Content.add(tagihan.getContentPane(), java.awt.BorderLayout.CENTER);
-        Content.revalidate();
-        Content.repaint();
-    }//GEN-LAST:event_TagihanMouseClicked
-
-    private void LoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LoginMouseClicked
-        // TODO add your handling code here:
-        Content.removeAll();
-        Login login = new Login();
-        Content.add(login.getContentPane(), java.awt.BorderLayout.CENTER);
-        Content.revalidate();
-        Content.repaint();
-    }//GEN-LAST:event_LoginMouseClicked
-
-    private void DaftarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DaftarMouseClicked
+    private void daftarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_daftarMouseClicked
         // TODO add your handling code here:
         Content.removeAll();
         Daftar daftar = new Daftar();
         Content.add(daftar.getContentPane(), java.awt.BorderLayout.CENTER);
         Content.revalidate();
         Content.repaint();
-    }//GEN-LAST:event_DaftarMouseClicked
+    }//GEN-LAST:event_daftarMouseClicked
+
+    private void loginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginMouseClicked
+        // TODO add your handling code here:
+        Content.removeAll();
+        Login login = new Login();
+        Content.add(login.getContentPane(), java.awt.BorderLayout.CENTER);
+        Content.revalidate();
+        Content.repaint();
+    }//GEN-LAST:event_loginMouseClicked
 
     /**
      * @param args the command line arguments
@@ -213,12 +200,14 @@ public class menu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Content;
-    private javax.swing.JMenu Daftar;
-    private javax.swing.JMenu Home;
-    private javax.swing.JMenu Login;
-    private javax.swing.JMenu Pemesanan;
-    private javax.swing.JMenu Tagihan;
-    private javax.swing.JMenu menuUtama;
+    private javax.swing.JMenu about;
+    private javax.swing.JLabel bayuimantoro;
+    private javax.swing.JMenu daftar;
+    private javax.swing.JMenu home;
+    private javax.swing.JMenu login;
     private javax.swing.JMenuBar menubar;
+    private javax.swing.JLabel muhamadhafizhalbar;
+    private javax.swing.JLabel namaanggota;
+    private javax.swing.JLabel tittle;
     // End of variables declaration//GEN-END:variables
 }
