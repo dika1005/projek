@@ -47,13 +47,12 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="nama" min="-2" pref="37" max="-2" attributes="0"/>
-                      <Component id="Kembali" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="password" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="username" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="email" alignment="0" min="-2" pref="61" max="-2" attributes="0"/>
                       <Component id="alamat" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="formusername" max="32767" attributes="0"/>
                       <Component id="formpassword" alignment="0" max="32767" attributes="0"/>
@@ -76,11 +75,8 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="title" min="-2" max="-2" attributes="0"/>
-                      <Component id="Kembali" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="title" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="nama" min="-2" max="-2" attributes="0"/>
                       <Component id="formnama" min="-2" max="-2" attributes="0"/>
@@ -111,7 +107,7 @@
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="Daftar" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="277" max="32767" attributes="0"/>
+                  <EmptySpace pref="268" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -119,6 +115,9 @@
       <SubComponents>
         <Component class="javax.swing.JLabel" name="title">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="18" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Form Daftar"/>
           </Properties>
         </Component>
@@ -150,11 +149,6 @@
         <Component class="javax.swing.JButton" name="Daftar">
           <Properties>
             <Property name="text" type="java.lang.String" value="Daftar"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JButton" name="Kembali">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Kembali"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="formnama">

@@ -34,7 +34,6 @@ public class Daftar extends javax.swing.JFrame {
         email = new javax.swing.JLabel();
         alamat = new javax.swing.JLabel();
         Daftar = new javax.swing.JButton();
-        Kembali = new javax.swing.JButton();
         formnama = new javax.swing.JTextField();
         formusername = new javax.swing.JTextField();
         formpassword = new javax.swing.JTextField();
@@ -45,6 +44,7 @@ public class Daftar extends javax.swing.JFrame {
 
         jPanel1.setPreferredSize(new java.awt.Dimension(500, 500));
 
+        title.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         title.setText("Form Daftar");
 
         nama.setText("Nama");
@@ -59,8 +59,6 @@ public class Daftar extends javax.swing.JFrame {
 
         Daftar.setText("Daftar");
 
-        Kembali.setText("Kembali");
-
         formalamat.setColumns(20);
         formalamat.setRows(5);
 
@@ -72,12 +70,11 @@ public class Daftar extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(nama, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Kembali)
                     .addComponent(password)
                     .addComponent(username)
                     .addComponent(email, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(alamat))
-                .addGap(35, 35, 35)
+                .addGap(52, 52, 52)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(formusername)
                     .addComponent(formpassword)
@@ -95,10 +92,8 @@ public class Daftar extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(title)
-                    .addComponent(Kembali))
-                .addGap(18, 18, 18)
+                .addComponent(title)
+                .addGap(29, 29, 29)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(nama)
                     .addComponent(formnama, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -123,7 +118,7 @@ public class Daftar extends javax.swing.JFrame {
                         .addComponent(formalamat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addComponent(Daftar)
-                .addContainerGap(277, Short.MAX_VALUE))
+                .addContainerGap(268, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -178,7 +173,6 @@ public class Daftar extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Daftar;
-    private javax.swing.JButton Kembali;
     private javax.swing.JLabel alamat;
     private javax.swing.JLabel email;
     private javax.swing.JTextArea formalamat;
