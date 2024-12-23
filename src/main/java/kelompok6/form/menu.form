@@ -16,6 +16,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="About"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="aboutMouseClicked"/>
+          </Events>
         </Menu>
         <Menu class="javax.swing.JMenu" name="login">
           <Properties>

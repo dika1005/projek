@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package kelompok6.tabadmin;
+import kelompok6.tabadmin.menu_admin;
 
 /**
  *

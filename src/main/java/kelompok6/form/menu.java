@@ -65,6 +65,11 @@ public class menu extends javax.swing.JFrame {
         menubar.add(home);
 
         about.setText("About");
+        about.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                aboutMouseClicked(evt);
+            }
+        });
         menubar.add(about);
 
         login.setText("Login");
@@ -120,11 +125,20 @@ public class menu extends javax.swing.JFrame {
     private void loginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginMouseClicked
         // TODO add your handling code here:
         Content.removeAll();
-        Login login = new Login();
+        Login login = new Login(this);
         Content.add(login.getContentPane(), java.awt.BorderLayout.CENTER);
         Content.revalidate();
         Content.repaint();
     }//GEN-LAST:event_loginMouseClicked
+
+    private void aboutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aboutMouseClicked
+        // TODO add your handling code here:
+        Content.removeAll();
+        about About = new about();
+        Content.add(About.getContentPane(), java.awt.BorderLayout.CENTER);
+        Content.revalidate();
+        Content.repaint();
+    }//GEN-LAST:event_aboutMouseClicked
 
     /**
      * @param args the command line arguments
