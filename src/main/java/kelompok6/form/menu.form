@@ -16,11 +16,17 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Menu Utama"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="menuUtamaMouseClicked"/>
+          </Events>
         </Menu>
         <Menu class="javax.swing.JMenu" name="Pemesanan">
           <Properties>
             <Property name="text" type="java.lang.String" value="Pemesanan"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="PemesananMouseClicked"/>
+          </Events>
         </Menu>
         <Menu class="javax.swing.JMenu" name="Tagihan">
           <Properties>

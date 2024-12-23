@@ -65,9 +65,19 @@ public class menu extends javax.swing.JFrame {
         jMenuBar1.add(Home);
 
         menuUtama.setText("Menu Utama");
+        menuUtama.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                menuUtamaMouseClicked(evt);
+            }
+        });
         jMenuBar1.add(menuUtama);
 
         Pemesanan.setText("Pemesanan");
+        Pemesanan.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PemesananMouseClicked(evt);
+            }
+        });
         jMenuBar1.add(Pemesanan);
 
         Tagihan.setText("Tagihan");
@@ -97,6 +107,24 @@ public class menu extends javax.swing.JFrame {
         Content.revalidate();
         Content.repaint();
     }//GEN-LAST:event_HomeMouseClicked
+
+    private void menuUtamaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuUtamaMouseClicked
+        // TODO add your handling code here:
+        Content.removeAll();
+        halaman_utama halamanUtama = new halaman_utama();
+        Content.add(halamanUtama.getContentPane(), java.awt.BorderLayout.CENTER);
+        Content.revalidate();
+        Content.repaint();
+    }//GEN-LAST:event_menuUtamaMouseClicked
+
+    private void PemesananMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PemesananMouseClicked
+        // TODO add your handling code here:
+        Content.removeAll();
+        paket_data pemesanan = new paket_data();
+        Content.add(pemesanan.getContentPane(), java.awt.BorderLayout.CENTER);
+        Content.revalidate();
+        Content.repaint();
+    }//GEN-LAST:event_PemesananMouseClicked
 
     /**
      * @param args the command line arguments
