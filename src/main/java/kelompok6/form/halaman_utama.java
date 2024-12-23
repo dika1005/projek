@@ -27,14 +27,14 @@ public class halaman_utama extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        selamat = new javax.swing.JLabel();
-        User = new javax.swing.JLabel();
+        selamatdatang = new javax.swing.JLabel();
+        user = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        selamat.setText("Selamat Datang");
+        selamatdatang.setText("Selamat Datang");
 
-        User.setText("User");
+        user.setText("User");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -42,9 +42,9 @@ public class halaman_utama extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(53, 53, 53)
-                .addComponent(selamat)
+                .addComponent(selamatdatang)
                 .addGap(72, 72, 72)
-                .addComponent(User, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(user, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(552, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -52,8 +52,8 @@ public class halaman_utama extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(52, 52, 52)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(selamat)
-                    .addComponent(User))
+                    .addComponent(selamatdatang)
+                    .addComponent(user))
                 .addContainerGap(532, Short.MAX_VALUE))
         );
 
@@ -107,8 +107,8 @@ public class halaman_utama extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel User;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JLabel selamat;
+    private javax.swing.JLabel selamatdatang;
+    private javax.swing.JLabel user;
     // End of variables declaration//GEN-END:variables
 }

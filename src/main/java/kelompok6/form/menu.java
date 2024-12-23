@@ -35,11 +35,11 @@ public class menu extends javax.swing.JFrame {
     private void initComponents() {
 
         Content = new javax.swing.JPanel();
-        jMenuBar1 = new javax.swing.JMenuBar();
+        menubar = new javax.swing.JMenuBar();
         Home = new javax.swing.JMenu();
-        menuUtama = new javax.swing.JMenu();
         Login = new javax.swing.JMenu();
         Daftar = new javax.swing.JMenu();
+        menuUtama = new javax.swing.JMenu();
         Pemesanan = new javax.swing.JMenu();
         Tagihan = new javax.swing.JMenu();
 
@@ -64,15 +64,7 @@ public class menu extends javax.swing.JFrame {
                 HomeMouseClicked(evt);
             }
         });
-        jMenuBar1.add(Home);
-
-        menuUtama.setText("Menu Utama");
-        menuUtama.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                menuUtamaMouseClicked(evt);
-            }
-        });
-        jMenuBar1.add(menuUtama);
+        menubar.add(Home);
 
         Login.setText("Login");
         Login.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -80,7 +72,7 @@ public class menu extends javax.swing.JFrame {
                 LoginMouseClicked(evt);
             }
         });
-        jMenuBar1.add(Login);
+        menubar.add(Login);
 
         Daftar.setText("Daftar");
         Daftar.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -88,7 +80,15 @@ public class menu extends javax.swing.JFrame {
                 DaftarMouseClicked(evt);
             }
         });
-        jMenuBar1.add(Daftar);
+        menubar.add(Daftar);
+
+        menuUtama.setText("Menu Utama");
+        menuUtama.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                menuUtamaMouseClicked(evt);
+            }
+        });
+        menubar.add(menuUtama);
 
         Pemesanan.setText("Pemesanan");
         Pemesanan.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -96,7 +96,7 @@ public class menu extends javax.swing.JFrame {
                 PemesananMouseClicked(evt);
             }
         });
-        jMenuBar1.add(Pemesanan);
+        menubar.add(Pemesanan);
 
         Tagihan.setText("Tagihan");
         Tagihan.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -104,9 +104,9 @@ public class menu extends javax.swing.JFrame {
                 TagihanMouseClicked(evt);
             }
         });
-        jMenuBar1.add(Tagihan);
+        menubar.add(Tagihan);
 
-        setJMenuBar(jMenuBar1);
+        setJMenuBar(menubar);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -218,7 +218,7 @@ public class menu extends javax.swing.JFrame {
     private javax.swing.JMenu Login;
     private javax.swing.JMenu Pemesanan;
     private javax.swing.JMenu Tagihan;
-    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenu menuUtama;
+    private javax.swing.JMenuBar menubar;
     // End of variables declaration//GEN-END:variables
 }

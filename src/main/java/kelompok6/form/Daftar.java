@@ -27,13 +27,13 @@ public class Daftar extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        title = new javax.swing.JLabel();
+        tittle = new javax.swing.JLabel();
         nama = new javax.swing.JLabel();
         username = new javax.swing.JLabel();
         password = new javax.swing.JLabel();
         email = new javax.swing.JLabel();
         alamat = new javax.swing.JLabel();
-        Daftar = new javax.swing.JButton();
+        daftar = new javax.swing.JButton();
         formnama = new javax.swing.JTextField();
         formusername = new javax.swing.JTextField();
         formpassword = new javax.swing.JTextField();
@@ -44,8 +44,8 @@ public class Daftar extends javax.swing.JFrame {
 
         jPanel1.setPreferredSize(new java.awt.Dimension(500, 500));
 
-        title.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        title.setText("Form Daftar");
+        tittle.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        tittle.setText("Form Daftar");
 
         nama.setText("Nama");
 
@@ -57,7 +57,7 @@ public class Daftar extends javax.swing.JFrame {
 
         alamat.setText("Alamat");
 
-        Daftar.setText("Daftar");
+        daftar.setText("Daftar");
 
         formalamat.setColumns(20);
         formalamat.setRows(5);
@@ -80,8 +80,8 @@ public class Daftar extends javax.swing.JFrame {
                     .addComponent(formpassword)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Daftar)
-                            .addComponent(title))
+                            .addComponent(daftar)
+                            .addComponent(tittle))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addComponent(formnama)
                     .addComponent(formemail)
@@ -92,7 +92,7 @@ public class Daftar extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(title)
+                .addComponent(tittle)
                 .addGap(29, 29, 29)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(nama)
@@ -102,7 +102,7 @@ public class Daftar extends javax.swing.JFrame {
                     .addComponent(formusername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(username))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(formpassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(password))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -117,7 +117,7 @@ public class Daftar extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(formalamat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
-                .addComponent(Daftar)
+                .addComponent(daftar)
                 .addContainerGap(268, Short.MAX_VALUE))
         );
 
@@ -172,8 +172,8 @@ public class Daftar extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Daftar;
     private javax.swing.JLabel alamat;
+    private javax.swing.JButton daftar;
     private javax.swing.JLabel email;
     private javax.swing.JTextArea formalamat;
     private javax.swing.JTextField formemail;
@@ -183,7 +183,7 @@ public class Daftar extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel nama;
     private javax.swing.JLabel password;
-    private javax.swing.JLabel title;
+    private javax.swing.JLabel tittle;
     private javax.swing.JLabel username;
     // End of variables declaration//GEN-END:variables
 }
