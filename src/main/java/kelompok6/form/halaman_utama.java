@@ -29,7 +29,6 @@ public class halaman_utama extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         selamat = new javax.swing.JLabel();
         User = new javax.swing.JLabel();
-        Masuk = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -37,20 +36,15 @@ public class halaman_utama extends javax.swing.JFrame {
 
         User.setText("User");
 
-        Masuk.setText("Masuk");
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(53, 53, 53)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Masuk)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(selamat)
-                        .addGap(72, 72, 72)
-                        .addComponent(User, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addComponent(selamat)
+                .addGap(72, 72, 72)
+                .addComponent(User, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(552, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -60,9 +54,7 @@ public class halaman_utama extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(selamat)
                     .addComponent(User))
-                .addGap(65, 65, 65)
-                .addComponent(Masuk)
-                .addContainerGap(440, Short.MAX_VALUE))
+                .addContainerGap(532, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -115,7 +107,6 @@ public class halaman_utama extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Masuk;
     private javax.swing.JLabel User;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel selamat;
