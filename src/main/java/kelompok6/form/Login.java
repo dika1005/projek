@@ -49,6 +49,11 @@ public class Login extends javax.swing.JFrame {
         level.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pilih", "Admin", "User" }));
 
         Simpan.setText("SIMPAN");
+        Simpan.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                SimpanMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -110,6 +115,11 @@ public class Login extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void SimpanMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SimpanMouseClicked
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_SimpanMouseClicked
 
     /**
      * @param args the command line arguments

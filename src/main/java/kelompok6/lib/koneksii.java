@@ -1,33 +1,52 @@
-package kelompok6.projek;
+package kelompok6.lib;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+import com.zaxxer.hikari.HikariConfig;
+import com.zaxxer.hikari.HikariDataSource;
+
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
-
-import javax.swing.JOptionPane;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class koneksii {
-    Connection con;
-    
-    public koneksii(){
-        String Id = "toko";
-        String Pass = "123";
-        String Driver = "com.mysql.cj.jdbc.Driver";
-        String Url = "jdbc:mysql://217.15.165.147:3306/db_toko";
-        
+
+    private static final Logger logger = Logger.getLogger(koneksii.class.getName());
+    private static HikariDataSource dataSource;
+
+    static {
         try {
-            Class.forName(Driver);
-            con = DriverManager.getConnection(Url, Id, Pass);
-            JOptionPane.showMessageDialog(null, "Koneksi Berhasil");
-        } catch (ClassNotFoundException | SQLException e) {
-            JOptionPane.showMessageDialog(null, "Koneksi Gagal: " + e.getMessage());
+            HikariConfig config = new HikariConfig();
+            config.setJdbcUrl("jdbc:mysql://217.15.165.147:3306/db_toko");
+            config.setUsername("toko");
+            config.setPassword("123");
+            config.setDriverClassName("com.mysql.cj.jdbc.Driver");
+
+            // Optional: Tuning pool settings
+            config.setMaximumPoolSize(10);
+            config.setMinimumIdle(2);
+            config.setIdleTimeout(30000);
+            config.setMaxLifetime(1800000);
+
+            dataSource = new HikariDataSource(config);
+
+            logger.info("Koneksi Berhasil");
+        } catch (Exception e) {
+            logger.log(Level.SEVERE, "Koneksi Gagal: " + e.getMessage(), e);
+            throw new RuntimeException(e);
         }
     }
-    public static void main(String[]args){
-        koneksii k = new koneksii();
+
+    public static Connection getConnection() throws SQLException {
+        return dataSource.getConnection();
+    }
+
+    public static void main(String[] args) {
+        try (Connection connection = koneksii.getConnection()) {
+            if (connection != null) {
+                logger.info("Koneksi berhasil digunakan.");
+            }
+        } catch (SQLException e) {
+            logger.log(Level.SEVERE, "Koneksi Gagal: " + e.getMessage(), e);
+        }
     }
 }
