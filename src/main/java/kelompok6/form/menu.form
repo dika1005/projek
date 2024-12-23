@@ -20,6 +20,16 @@
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="menuUtamaMouseClicked"/>
           </Events>
         </Menu>
+        <Menu class="javax.swing.JMenu" name="Login">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Login"/>
+          </Properties>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="Daftar">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Daftar"/>
+          </Properties>
+        </Menu>
         <Menu class="javax.swing.JMenu" name="Pemesanan">
           <Properties>
             <Property name="text" type="java.lang.String" value="Pemesanan"/>
