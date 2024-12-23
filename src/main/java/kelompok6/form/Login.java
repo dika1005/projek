@@ -47,7 +47,7 @@ public class Login extends javax.swing.JFrame {
 
         jLabel4.setText("PASSWORD");
 
-        level.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Admin", "User", " " }));
+        level.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pilih", "Admin", "User" }));
 
         Simpan.setText("SIMPAN");
 
