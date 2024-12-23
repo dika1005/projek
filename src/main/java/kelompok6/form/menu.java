@@ -83,6 +83,11 @@ public class menu extends javax.swing.JFrame {
         jMenuBar1.add(Login);
 
         Daftar.setText("Daftar");
+        Daftar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                DaftarMouseClicked(evt);
+            }
+        });
         jMenuBar1.add(Daftar);
 
         Pemesanan.setText("Pemesanan");
@@ -161,6 +166,15 @@ public class menu extends javax.swing.JFrame {
         Content.revalidate();
         Content.repaint();
     }//GEN-LAST:event_LoginMouseClicked
+
+    private void DaftarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DaftarMouseClicked
+        // TODO add your handling code here:
+        Content.removeAll();
+        Daftar daftar = new Daftar();
+        Content.add(daftar.getContentPane(), java.awt.BorderLayout.CENTER);
+        Content.revalidate();
+        Content.repaint();
+    }//GEN-LAST:event_DaftarMouseClicked
 
     /**
      * @param args the command line arguments
