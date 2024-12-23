@@ -27,20 +27,20 @@ public class paket_data extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        Beli = new javax.swing.JButton();
+        tittle = new javax.swing.JLabel();
+        paketInternet = new javax.swing.JLabel();
+        level = new javax.swing.JComboBox<>();
+        beli = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Beli Paket Data");
+        tittle.setText("Beli Paket Data");
 
-        jLabel2.setText("Paket Internet");
+        paketInternet.setText("Paket Internet");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pilih :", "20 Mbps Rp 239.000/bulan", "35 Mbps Rp 299.000/bulan", "50 Mbps Rp 349.000/bulan", "100 Mbps Rp 439.000/bulan" }));
+        level.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pilih :", "20 Mbps Rp 239.000/bulan", "35 Mbps Rp 299.000/bulan", "50 Mbps Rp 349.000/bulan", "100 Mbps Rp 439.000/bulan" }));
 
-        Beli.setText("BELI");
+        beli.setText("BELI");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -50,28 +50,28 @@ public class paket_data extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(208, 208, 208)
-                        .addComponent(jLabel2)
+                        .addComponent(paketInternet)
                         .addGap(84, 84, 84)
-                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(level, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(334, 334, 334)
-                        .addComponent(jLabel1))
+                        .addComponent(tittle))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(345, 345, 345)
-                        .addComponent(Beli)))
+                        .addComponent(beli)))
                 .addContainerGap(249, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(102, 102, 102)
-                .addComponent(jLabel1)
+                .addComponent(tittle)
                 .addGap(46, 46, 46)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(paketInternet)
+                    .addComponent(level, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(27, 27, 27)
-                .addComponent(Beli)
+                .addComponent(beli)
                 .addContainerGap(356, Short.MAX_VALUE))
         );
 
@@ -125,10 +125,10 @@ public class paket_data extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Beli;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JButton beli;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JComboBox<String> level;
+    private javax.swing.JLabel paketInternet;
+    private javax.swing.JLabel tittle;
     // End of variables declaration//GEN-END:variables
 }
