@@ -38,7 +38,7 @@ public class paket_data extends javax.swing.JFrame {
 
         jLabel2.setText("Paket Internet");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "10 Mbps", "20 Mbps", "50 Mbps", "100 Mbps" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "20 Mbps Rp 239.000/bulan", "35 Mbps Rp 299.000/bulan", "50 Mbps Rp 349.000/bulan", "100 Mbps Rp 439.000/bulan" }));
 
         Beli.setText("BELI");
 
@@ -49,19 +49,17 @@ public class paket_data extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(255, 255, 255)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addGap(83, 83, 83)
-                                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(79, 79, 79)
-                                .addComponent(jLabel1))))
+                        .addGap(208, 208, 208)
+                        .addComponent(jLabel2)
+                        .addGap(84, 84, 84)
+                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(346, 346, 346)
+                        .addGap(334, 334, 334)
+                        .addComponent(jLabel1))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(345, 345, 345)
                         .addComponent(Beli)))
-                .addContainerGap(299, Short.MAX_VALUE))
+                .addContainerGap(249, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
