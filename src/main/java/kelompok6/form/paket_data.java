@@ -38,7 +38,7 @@ public class paket_data extends javax.swing.JFrame {
 
         jLabel2.setText("Paket Internet");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "20 Mbps Rp 239.000/bulan", "35 Mbps Rp 299.000/bulan", "50 Mbps Rp 349.000/bulan", "100 Mbps Rp 439.000/bulan" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pilih :", "20 Mbps Rp 239.000/bulan", "35 Mbps Rp 299.000/bulan", "50 Mbps Rp 349.000/bulan", "100 Mbps Rp 439.000/bulan" }));
 
         Beli.setText("BELI");
 

@@ -90,11 +90,12 @@
         <Component class="javax.swing.JComboBox" name="jComboBox1">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="4">
-                <StringItem index="0" value="20 Mbps Rp 239.000/bulan"/>
-                <StringItem index="1" value="35 Mbps Rp 299.000/bulan"/>
-                <StringItem index="2" value="50 Mbps Rp 349.000/bulan"/>
-                <StringItem index="3" value="100 Mbps Rp 439.000/bulan"/>
+              <StringArray count="5">
+                <StringItem index="0" value="Pilih :"/>
+                <StringItem index="1" value="20 Mbps Rp 239.000/bulan"/>
+                <StringItem index="2" value="35 Mbps Rp 299.000/bulan"/>
+                <StringItem index="3" value="50 Mbps Rp 349.000/bulan"/>
+                <StringItem index="4" value="100 Mbps Rp 439.000/bulan"/>
               </StringArray>
             </Property>
           </Properties>
