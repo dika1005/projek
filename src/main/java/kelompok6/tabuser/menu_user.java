@@ -4,17 +4,23 @@
  */
 package kelompok6.tabuser;
 
+import kelompok6.model.UserModel;
+
 /**
  *
  * @author bayui
  */
 public class menu_user extends javax.swing.JFrame {
-
+    private static UserModel session;
     /**
      * Creates new form menu_user
      */
-    public menu_user() {
+    public menu_user(UserModel user) {
         initComponents();
+        this.session = user;
+    }
+
+    public void load_data(){
     }
 
     /**
@@ -162,7 +168,7 @@ public class menu_user extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new menu_user().setVisible(true);
+                new menu_user(session).setVisible(true);
             }
         });
     }

@@ -5,8 +5,11 @@
 package kelompok6.form;
 
 import kelompok6.model.AdminModel;
+import kelompok6.model.UserModel;
 import kelompok6.repo.AdminRepository;
+import kelompok6.repo.UserRepo;
 import kelompok6.tabadmin.menu_admin;
+import kelompok6.tabuser.menu_user;
 
 /**
  *
@@ -48,7 +51,23 @@ public class Login extends javax.swing.JFrame {
             if (knt.equals("Admin")) {
                 login_admin();
             } else if (knt.equals("User")) {
-                System.err.println("Login User");
+                login_user();
+            }
+        }
+
+        public void login_user(){
+            UserRepo userRepo = new UserRepo();
+            String username = formUsername.getText();
+            String password = formPassword.getText();
+            UserModel user = userRepo.login(username, password);
+            if (user != null) {
+                System.out.println("Login Berhasil");
+                Menu.setVisible(false);
+                // Assuming you have a user menu similar to admin menu
+                menu_user menuUser = new menu_user(user);
+                menuUser.setVisible(true);
+            } else {
+                System.out.println("Login Gagal");
             }
         }
         /**

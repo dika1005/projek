@@ -6,25 +6,42 @@ import java.util.List;
 import kelompok6.lib.koneksii;
 import kelompok6.model.UserModel;
 
-
-
 public class UserRepo {
     private static final String TABLE_NAME = "user";
 
     public boolean create(UserModel user) {
-        String query = "INSERT INTO " + TABLE_NAME + " (nama, username, password, email, alamat) VALUES (?, ?, ?, ?, ?)";
+        String query = "INSERT INTO " + TABLE_NAME + " (id, nama, username, password, email, alamat) VALUES (?, ?, ?, ?, ?, ?)";
         try (Connection connection = koneksii.getConnection();
                 PreparedStatement stmt = connection.prepareStatement(query)) {
-            stmt.setString(1, user.getNama());
-            stmt.setString(2, user.getUsername());
-            stmt.setString(3, user.getPassword());
-            stmt.setString(4, user.getEmail());
-            stmt.setString(5, user.getAlamat());
+            String uniqueId = generateUniqueId(connection);
+            stmt.setString(1, uniqueId);
+            stmt.setString(2, user.getNama());
+            stmt.setString(3, user.getUsername());
+            stmt.setString(4, user.getPassword());
+            stmt.setString(5, user.getEmail());
+            stmt.setString(6, user.getAlamat());
             return stmt.executeUpdate() > 0;
         } catch (SQLException e) {
             e.printStackTrace();
             return false;
         }
+    }
+
+    private String generateUniqueId(Connection connection) throws SQLException {
+        String uniqueId;
+        boolean isUnique;
+        do {
+            uniqueId = java.util.UUID.randomUUID().toString();
+            String query = "SELECT COUNT(*) FROM " + TABLE_NAME + " WHERE id = ?";
+            try (PreparedStatement stmt = connection.prepareStatement(query)) {
+                stmt.setString(1, uniqueId);
+                try (ResultSet rs = stmt.executeQuery()) {
+                    rs.next();
+                    isUnique = rs.getInt(1) == 0;
+                }
+            }
+        } while (!isUnique);
+        return uniqueId;
     }
 
     public List<UserModel> readAll() {
@@ -34,7 +51,9 @@ public class UserRepo {
                 Statement stmt = connection.createStatement();
                 ResultSet rs = stmt.executeQuery(query)) {
             while (rs.next()) {
+                String uniqueId = generateUniqueId(connection);
                 UserModel user = new UserModel();
+                user.setId(uniqueId);
                 user.setNama(rs.getString("nama"));
                 user.setUsername(rs.getString("username"));
                 user.setPassword(rs.getString("password"));
@@ -57,6 +76,7 @@ public class UserRepo {
             ResultSet rs = stmt.executeQuery();
             if (rs.next()) {
                 return new UserModel(
+                        rs.getString("id"),
                         rs.getString("nama"),
                         rs.getString("username"),
                         rs.getString("password"),
@@ -70,14 +90,14 @@ public class UserRepo {
     }
 
     public boolean update(UserModel user) {
-        String query = "UPDATE " + TABLE_NAME + " SET nama = ?, password = ?, email = ?, alamat = ? WHERE username = ?";
+        String query = "UPDATE " + TABLE_NAME + " SET nama = ?, password = ?, email = ?, alamat = ? WHERE id = ?";
         try (Connection connection = koneksii.getConnection();
                 PreparedStatement stmt = connection.prepareStatement(query)) {
             stmt.setString(1, user.getNama());
             stmt.setString(2, user.getPassword());
             stmt.setString(3, user.getEmail());
             stmt.setString(4, user.getAlamat());
-            stmt.setString(5, user.getUsername());
+            stmt.setString(5, user.getId());
             return stmt.executeUpdate() > 0;
         } catch (SQLException e) {
             e.printStackTrace();
@@ -85,11 +105,11 @@ public class UserRepo {
         }
     }
 
-    public boolean delete(String username) {
-        String query = "DELETE FROM " + TABLE_NAME + " WHERE username = ?";
+    public boolean delete(String id) {
+        String query = "DELETE FROM " + TABLE_NAME + " WHERE id = ?";
         try (Connection connection = koneksii.getConnection();
                 PreparedStatement stmt = connection.prepareStatement(query)) {
-            stmt.setString(1, username);
+            stmt.setString(1, id);
             return stmt.executeUpdate() > 0;
         } catch (SQLException e) {
             e.printStackTrace();

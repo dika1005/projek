@@ -33,7 +33,7 @@ public class Daftar extends javax.swing.JFrame {
         String email = formemail.getText();
         String alamat = formalamat.getText();
 
-        UserModel user = new UserModel(nama, username, password, email, alamat);
+        UserModel user = new UserModel(null, nama, username, password, email, alamat);
         UserRepo userRepo = new UserRepo();
 
         if (userRepo.create(user)) {
