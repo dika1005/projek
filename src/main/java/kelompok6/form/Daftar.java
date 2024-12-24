@@ -61,7 +61,7 @@ public class Daftar extends javax.swing.JFrame {
         daftar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 daftarMouseClicked(evt);
-                
+
             }
         });
 
@@ -143,7 +143,7 @@ public class Daftar extends javax.swing.JFrame {
 
     private void daftarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_daftarMouseClicked
         // TODO add your handling code here:
-        
+               
     }//GEN-LAST:event_daftarMouseClicked
 
     /**
