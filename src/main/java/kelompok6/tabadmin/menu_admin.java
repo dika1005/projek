@@ -34,6 +34,11 @@ public class menu_admin extends javax.swing.JFrame {
         tableTagihan = new javax.swing.JTable();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
+        jMenu2 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenuItem4 = new javax.swing.JMenuItem();
 
         jTextField1.setText("jTextField1");
 
@@ -81,6 +86,22 @@ public class menu_admin extends javax.swing.JFrame {
 
         jMenu1.setText("Tagihan");
         jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("Administrasi");
+
+        jMenuItem1.setText("List User");
+        jMenu2.add(jMenuItem1);
+
+        jMenuItem2.setText("Laporan User");
+        jMenu2.add(jMenuItem2);
+
+        jMenuItem3.setText("Edit User");
+        jMenu2.add(jMenuItem3);
+
+        jMenuItem4.setText("Hapus User");
+        jMenu2.add(jMenuItem4);
+
+        jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
 
@@ -138,7 +159,12 @@ public class menu_admin extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel formtagihan;
     private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jTextField1;
