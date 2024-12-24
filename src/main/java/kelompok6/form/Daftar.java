@@ -20,7 +20,7 @@ import kelompok6.repo.UserRepo;
 public class Daftar extends javax.swing.JFrame {
 
     /**
-     * Creates new form register
+     * Creates new form registe
      */
     public Daftar() {
         initComponents();
