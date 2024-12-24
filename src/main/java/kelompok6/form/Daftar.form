@@ -150,6 +150,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Daftar"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="daftarMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="formnama">
         </Component>

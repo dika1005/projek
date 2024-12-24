@@ -58,6 +58,12 @@ public class Daftar extends javax.swing.JFrame {
         alamat.setText("Alamat");
 
         daftar.setText("Daftar");
+        daftar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                daftarMouseClicked(evt);
+                
+            }
+        });
 
         formalamat.setColumns(20);
         formalamat.setRows(5);
@@ -134,6 +140,11 @@ public class Daftar extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void daftarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_daftarMouseClicked
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_daftarMouseClicked
 
     /**
      * @param args the command line arguments
