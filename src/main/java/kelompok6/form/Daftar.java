@@ -4,6 +4,15 @@
  */
 package kelompok6.form;
 
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import javax.swing.JOptionPane;
+
+import kelompok6.lib.koneksii;
+import kelompok6.model.UserModel;
+import kelompok6.repo.UserRepo;
+
 /**
  *
  * @author LOQA
@@ -17,6 +26,22 @@ public class Daftar extends javax.swing.JFrame {
         initComponents();
     }
 
+    public void daftar(){
+        String nama = formnama.getText();
+        String username = formusername.getText();
+        String password = formpassword.getText();
+        String email = formemail.getText();
+        String alamat = formalamat.getText();
+
+        UserModel user = new UserModel(nama, username, password, email, alamat);
+        UserRepo userRepo = new UserRepo();
+
+        if (userRepo.create(user)) {
+            JOptionPane.showMessageDialog(this, "User registered successfully!");
+        } else {
+            JOptionPane.showMessageDialog(this, "Failed to register user.");
+        }
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -58,6 +83,11 @@ public class Daftar extends javax.swing.JFrame {
         alamat.setText("Alamat");
 
         daftar.setText("Daftar");
+        daftar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                daftarMouseClicked(evt);
+            }
+        });
 
         formalamat.setColumns(20);
         formalamat.setRows(5);
@@ -118,7 +148,7 @@ public class Daftar extends javax.swing.JFrame {
                         .addComponent(formalamat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addComponent(daftar)
-                .addContainerGap(268, Short.MAX_VALUE))
+                .addContainerGap(288, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -134,6 +164,11 @@ public class Daftar extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void daftarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_daftarMouseClicked
+        // TODO add your handling code here:
+        daftar();
+    }//GEN-LAST:event_daftarMouseClicked
 
     /**
      * @param args the command line arguments
