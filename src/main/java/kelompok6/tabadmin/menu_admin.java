@@ -55,11 +55,11 @@ public class menu_admin extends javax.swing.JFrame {
         ContentmenuUser = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenuItem4 = new javax.swing.JMenuItem();
+        administrasi = new javax.swing.JMenu();
+        listUser = new javax.swing.JMenuItem();
+        laporanUser = new javax.swing.JMenuItem();
+        editUser = new javax.swing.JMenuItem();
+        hapusUser = new javax.swing.JMenuItem();
 
         jTextField1.setText("jTextField1");
 
@@ -79,26 +79,26 @@ public class menu_admin extends javax.swing.JFrame {
         jMenu1.setText("Tagihan");
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("Administrasi");
+        administrasi.setText("Administrasi");
 
-        jMenuItem1.setText("List User");
-        jMenuItem1.addMouseListener(new java.awt.event.MouseAdapter() {
+        listUser.setText("List User");
+        listUser.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jMenuItem1MouseClicked(evt);
+                listUserMouseClicked(evt);
             }
         });
-        jMenu2.add(jMenuItem1);
+        administrasi.add(listUser);
 
-        jMenuItem2.setText("Laporan User");
-        jMenu2.add(jMenuItem2);
+        laporanUser.setText("Laporan User");
+        administrasi.add(laporanUser);
 
-        jMenuItem3.setText("Edit User");
-        jMenu2.add(jMenuItem3);
+        editUser.setText("Edit User");
+        administrasi.add(editUser);
 
-        jMenuItem4.setText("Hapus User");
-        jMenu2.add(jMenuItem4);
+        hapusUser.setText("Hapus User");
+        administrasi.add(hapusUser);
 
-        jMenuBar1.add(jMenu2);
+        jMenuBar1.add(administrasi);
 
         setJMenuBar(jMenuBar1);
 
@@ -118,10 +118,10 @@ public class menu_admin extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenuItem1MouseClicked
+    private void listUserMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listUserMouseClicked
         // TODO add your handling code here:
         
-    }//GEN-LAST:event_jMenuItem1MouseClicked
+    }//GEN-LAST:event_listUserMouseClicked
 
     /**
      * @param args the command line arguments
@@ -160,13 +160,13 @@ public class menu_admin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel ContentmenuUser;
+    private javax.swing.JMenu administrasi;
+    private javax.swing.JMenuItem editUser;
+    private javax.swing.JMenuItem hapusUser;
     private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JMenuItem laporanUser;
+    private javax.swing.JMenuItem listUser;
     // End of variables declaration//GEN-END:variables
 }

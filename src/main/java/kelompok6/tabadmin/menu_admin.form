@@ -14,30 +14,30 @@
             <Property name="text" type="java.lang.String" value="Tagihan"/>
           </Properties>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenu2">
+        <Menu class="javax.swing.JMenu" name="administrasi">
           <Properties>
             <Property name="text" type="java.lang.String" value="Administrasi"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
+            <MenuItem class="javax.swing.JMenuItem" name="listUser">
               <Properties>
                 <Property name="text" type="java.lang.String" value="List User"/>
               </Properties>
               <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jMenuItem1MouseClicked"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="listUserMouseClicked"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem2">
+            <MenuItem class="javax.swing.JMenuItem" name="laporanUser">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Laporan User"/>
               </Properties>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem3">
+            <MenuItem class="javax.swing.JMenuItem" name="editUser">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Edit User"/>
               </Properties>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem4">
+            <MenuItem class="javax.swing.JMenuItem" name="hapusUser">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Hapus User"/>
               </Properties>
