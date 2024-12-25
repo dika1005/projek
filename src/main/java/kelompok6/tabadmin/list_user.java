@@ -36,7 +36,7 @@ public class list_user extends javax.swing.JFrame {
             data[i][5] = user.getAlamat();
         }
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(data, columnNames));
+        tabelListUser.setModel(new javax.swing.table.DefaultTableModel(data, columnNames));
     }
     /**
      * This method is called from within the constructor to initialize the form.
