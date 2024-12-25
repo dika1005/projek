@@ -14,7 +14,7 @@
             <Property name="text" type="java.lang.String" value="Tagihan"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tagihanActionPerformed"/>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tagihanMouseClicked"/>
           </Events>
         </Menu>
         <Menu class="javax.swing.JMenu" name="administrasi">

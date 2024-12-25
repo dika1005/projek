@@ -73,9 +73,9 @@ public class menu_admin extends javax.swing.JFrame {
         );
 
         tagihan.setText("Tagihan");
-        tagihan.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tagihanActionPerformed(evt);
+        tagihan.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tagihanMouseClicked(evt);
             }
         });
         jMenuBar1.add(tagihan);
@@ -133,10 +133,10 @@ public class menu_admin extends javax.swing.JFrame {
         Content.repaint();
     }//GEN-LAST:event_listUserActionPerformed
 
-    private void tagihanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tagihanActionPerformed
+    private void tagihanMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tagihanMouseClicked
         // TODO add your handling code here:
         Home();
-    }//GEN-LAST:event_tagihanActionPerformed
+    }//GEN-LAST:event_tagihanMouseClicked
 
     private void editUserMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_editUserMouseClicked
         // TODO add your handling code here:
