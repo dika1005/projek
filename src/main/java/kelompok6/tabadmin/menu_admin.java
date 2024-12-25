@@ -34,7 +34,7 @@ public class menu_admin extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         ContentmenuUser = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
+        tagihan = new javax.swing.JMenu();
         administrasi = new javax.swing.JMenu();
         listUser = new javax.swing.JMenuItem();
         laporanUser = new javax.swing.JMenuItem();
@@ -56,8 +56,8 @@ public class menu_admin extends javax.swing.JFrame {
             .addGap(0, 634, Short.MAX_VALUE)
         );
 
-        jMenu1.setText("Tagihan");
-        jMenuBar1.add(jMenu1);
+        tagihan.setText("Tagihan");
+        jMenuBar1.add(tagihan);
 
         administrasi.setText("Administrasi");
 
@@ -143,10 +143,10 @@ public class menu_admin extends javax.swing.JFrame {
     private javax.swing.JMenu administrasi;
     private javax.swing.JMenuItem editUser;
     private javax.swing.JMenuItem hapusUser;
-    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JMenuItem laporanUser;
     private javax.swing.JMenuItem listUser;
+    private javax.swing.JMenu tagihan;
     // End of variables declaration//GEN-END:variables
 }
