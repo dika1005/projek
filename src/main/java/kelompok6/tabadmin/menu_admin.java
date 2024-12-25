@@ -73,6 +73,11 @@ public class menu_admin extends javax.swing.JFrame {
         administrasi.add(laporanUser);
 
         editUser.setText("Edit User");
+        editUser.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                editUserMouseClicked(evt);
+            }
+        });
         administrasi.add(editUser);
 
         hapusUser.setText("Hapus User");
@@ -102,6 +107,11 @@ public class menu_admin extends javax.swing.JFrame {
         // TODO add your handling code here:
         
     }//GEN-LAST:event_listUserMouseClicked
+
+    private void editUserMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_editUserMouseClicked
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_editUserMouseClicked
 
     /**
      * @param args the command line arguments
