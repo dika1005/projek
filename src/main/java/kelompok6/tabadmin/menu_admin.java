@@ -32,7 +32,7 @@ public class menu_admin extends javax.swing.JFrame {
     private void initComponents() {
 
         jTextField1 = new javax.swing.JTextField();
-        ContentmenuUser = new javax.swing.JPanel();
+        Content = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         tagihan = new javax.swing.JMenu();
         administrasi = new javax.swing.JMenu();
@@ -45,14 +45,14 @@ public class menu_admin extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        javax.swing.GroupLayout ContentmenuUserLayout = new javax.swing.GroupLayout(ContentmenuUser);
-        ContentmenuUser.setLayout(ContentmenuUserLayout);
-        ContentmenuUserLayout.setHorizontalGroup(
-            ContentmenuUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout ContentLayout = new javax.swing.GroupLayout(Content);
+        Content.setLayout(ContentLayout);
+        ContentLayout.setHorizontalGroup(
+            ContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 800, Short.MAX_VALUE)
         );
-        ContentmenuUserLayout.setVerticalGroup(
-            ContentmenuUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        ContentLayout.setVerticalGroup(
+            ContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 634, Short.MAX_VALUE)
         );
 
@@ -86,12 +86,12 @@ public class menu_admin extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(ContentmenuUser, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(Content, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(ContentmenuUser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Content, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -139,7 +139,7 @@ public class menu_admin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel ContentmenuUser;
+    private javax.swing.JPanel Content;
     private javax.swing.JMenu administrasi;
     private javax.swing.JMenuItem editUser;
     private javax.swing.JMenuItem hapusUser;

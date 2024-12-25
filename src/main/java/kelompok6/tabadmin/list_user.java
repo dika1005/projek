@@ -47,7 +47,7 @@ public class list_user extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        ContentlistUser = new javax.swing.JPanel();
+        Content = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tabelListUser = new javax.swing.JTable();
         cariid = new javax.swing.JLabel();
@@ -73,32 +73,32 @@ public class list_user extends javax.swing.JFrame {
 
         hapus.setText("HAPUS");
 
-        javax.swing.GroupLayout ContentlistUserLayout = new javax.swing.GroupLayout(ContentlistUser);
-        ContentlistUser.setLayout(ContentlistUserLayout);
-        ContentlistUserLayout.setHorizontalGroup(
-            ContentlistUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ContentlistUserLayout.createSequentialGroup()
-                .addGroup(ContentlistUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(ContentlistUserLayout.createSequentialGroup()
+        javax.swing.GroupLayout ContentLayout = new javax.swing.GroupLayout(Content);
+        Content.setLayout(ContentLayout);
+        ContentLayout.setHorizontalGroup(
+            ContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ContentLayout.createSequentialGroup()
+                .addGroup(ContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ContentLayout.createSequentialGroup()
                         .addGap(352, 352, 352)
                         .addComponent(hapus))
-                    .addGroup(ContentlistUserLayout.createSequentialGroup()
+                    .addGroup(ContentLayout.createSequentialGroup()
                         .addGap(167, 167, 167)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(ContentlistUserLayout.createSequentialGroup()
+                    .addGroup(ContentLayout.createSequentialGroup()
                         .addGap(333, 333, 333)
                         .addComponent(cariid)
                         .addGap(36, 36, 36)
                         .addComponent(formCariId, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(177, Short.MAX_VALUE))
         );
-        ContentlistUserLayout.setVerticalGroup(
-            ContentlistUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ContentlistUserLayout.createSequentialGroup()
+        ContentLayout.setVerticalGroup(
+            ContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ContentLayout.createSequentialGroup()
                 .addGap(118, 118, 118)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
-                .addGroup(ContentlistUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(ContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cariid)
                     .addComponent(formCariId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(16, 16, 16)
@@ -110,11 +110,11 @@ public class list_user extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(ContentlistUser, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(Content, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(ContentlistUser, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(Content, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -156,7 +156,7 @@ public class list_user extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel ContentlistUser;
+    private javax.swing.JPanel Content;
     private javax.swing.JLabel cariid;
     private javax.swing.JTextField formCariId;
     private javax.swing.JButton hapus;
