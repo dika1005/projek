@@ -13,6 +13,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Tagihan"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tagihanActionPerformed"/>
+          </Events>
         </Menu>
         <Menu class="javax.swing.JMenu" name="administrasi">
           <Properties>
@@ -24,7 +27,7 @@
                 <Property name="text" type="java.lang.String" value="List User"/>
               </Properties>
               <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="listUserMouseClicked"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="listUserActionPerformed"/>
               </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="laporanUser">
