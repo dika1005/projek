@@ -2,7 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package kelompok6.form;
+package kelompok6.tabadmin;
+
+import java.util.List;
 
 /**
  *
@@ -15,8 +17,27 @@ public class list_user extends javax.swing.JFrame {
      */
     public list_user() {
         initComponents();
+        loadData();
     }
 
+    public void loadData() {
+        kelompok6.repo.UserRepo userRepo = new kelompok6.repo.UserRepo();
+        List<kelompok6.model.UserModel> users = userRepo.readAll();
+        String[] columnNames = { "ID", "Nama", "Username", "Password", "email", "alamat"};
+        Object[][] data = new Object[users.size()][6];
+
+        for (int i = 0; i < users.size(); i++) {
+            kelompok6.model.UserModel user = users.get(i);
+            data[i][0] = user.getId();
+            data[i][1] = user.getNama();
+            data[i][2] = user.getUsername();
+            data[i][3] = user.getPassword();
+            data[i][4] = user.getEmail();
+            data[i][5] = user.getAlamat();
+        }
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(data, columnNames));
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
